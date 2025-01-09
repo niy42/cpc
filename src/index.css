@@ -127,3 +127,37 @@ body {
 .horizontal-scroll-container::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
+
+/* Game Apps Section */
+.game-apps-section {
+    background-color: #f8f9fa; /* Light background for the game apps section */
+    padding: 60px 0;
+}
+
+.game-apps-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Optional: Hover effect for cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .game-apps-section h2 {
+        font-size: 2em;
+    }
+}
