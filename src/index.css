@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  transition: border-color 0.25s;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  outline: none;
+  
+}
+button:hover {
+  background-color: #242424;
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #000;
+  }
+}
+
+.hero-section {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue gradient */
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.features-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+
+.footer-section {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+/* Ensure the body has a full height and no margin */
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+/* Container for the horizontal scroll */
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto; /* Horizontal scroll */
+  gap: 20px; /* Space between cards */
+  padding: 20px 0;
+  scroll-snap-type: x mandatory; /* For smooth snapping */
+  cursor: pointer;
+}
+
+.card-wrapper {
+  flex: 0 0 auto; /* Prevent items from stretching */
+  scroll-snap-align: start; /* Align items at the start of the container */
+}
+
+/* Optional: Style the card's hover effect */
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Optional: Add a nice transition effect to the scroll */
+.horizontal-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #646cff;
+  border-radius: 4px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
